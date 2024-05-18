@@ -1,0 +1,15 @@
+#STM32
+.metadata
+.settings
+[Rr]elease
+[Dd]ebug
+.launch
+
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
