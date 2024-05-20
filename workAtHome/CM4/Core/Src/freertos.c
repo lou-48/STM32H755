@@ -117,6 +117,7 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
+	HAL_UART_Transmit(COM_USART[COM1], (uint8_t*)"au revoir\r\n", 11, 10);
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
