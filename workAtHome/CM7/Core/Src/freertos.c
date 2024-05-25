@@ -121,7 +121,7 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	HAL_UART_Transmit(COM_USART[COM1], (uint8_t*)"coucou\r\n", 8, 10);
+	HAL_UART_Transmit((UART_HandleTypeDef*)USART3, (uint8_t*)"coucou\r\n", 8, 10);
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
